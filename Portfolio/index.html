@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Miesha Williams - Full Stack Web Developer</title>
+	<link href="https://fonts.googleapis.com/css?family=Nunito|Amatic+SC|Fredericka+the+Great|Open+Sans+Condensed:300" rel="stylesheet">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/flexbox.css">
+</head>
+<body>
+	<nav class="container" id="drawer">
+		
+		<div class="item-2 item"><a href="#about-me">ABOUT</div>
+		<div class="item-3 item"><a href="#portfolio">PORTFOLIO</a></div>
+		<div class="item-4 item"><a href="https://drive.google.com/file/d/1P48vYe6oJ2v0yrZO_Y4TtdavR2m2U6nf/view?usp=sharing">RESUME</a></div>
+		<div class="item-5 item"><a href="https://github.com/mieshanw">GITHUB</a></div>
+		
+	</nav>
+	<main class="light_blue">
+      <a id="menu">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/>
+        </svg>
+      </a>
+      <div>
+      <h1>Miesha W.</h1>
+   <h2>Full Stack Web Developer and Creator of Things</h2>
+   <br>
+</div> 
+<div id="social">
+	<img width="30px" src="assets/linkedin.png"> <a href="https://www.linkedin.com/in/miesha-williams/">Miesha Williams</a> - <img width="30px" src="assets/twitter.png"> <a href="twitter.com/mieshatech">@mieshatech</a>
+</div>
+<div id="about-me">
+	<p>I am a Full Stack Web Developer with a love for JavaScript and greasy foods. I was introduced to development at the young age of 12, when I would spend hours creating tumblr layouts in HTML and CSS. I went on to obtain my B.S. in Information Systems from Ferrum College emphasizing in Web Development and Business. I received my M.S. in Information Technology and a certification in Internet Application Development from Towson University. I am currently working towards my Masters of Business Administration with a concentration in Management at Frostburg University. </p> <p>I have a strong background in creating websites, applications, and database solutions. I have worked with top universities including Johns Hopkins University and The University of Maryland, as well as numerous private clients. I am currently in search of opportunities which will allow to me to utilize both my creative and technical skills. </p>
+</div>
+<article class="featured-work">
+        <h2>Featured Work</h2>
+        <div class="projects" id="portfolio">
+            <figure>
+                <img src="assets/pixelart.png">
+                <figcaption>
+                    Pixel Art Maker
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="assets/quotegen.png">
+                <figcaption>Random Quote Generator
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="assets/GrowGoogle.png">
+                <figcaption>Google Developer Scholar - Mobile Responsive Portfolio Design
+                </figcaption>
+            </figure>
+        </div>
+    </article>
+
+    </main>
+    <footer class="footer">
+    	<span>
+    	<p><a href="emailto:mieshanw@gmail.com">mieshanw@gmail.com</a></p>
+    	<p><a href="tel:443-834-4453">(443) 834-4453</a></p>
+    </span>
+    </footer>
+    
+    <script>
+      /*
+       * Open the drawer when the menu ison is clicked.
+       */
+      var menu = document.querySelector('#menu');
+      var main = document.querySelector('main');
+      var drawer = document.querySelector('#drawer');
+
+      menu.addEventListener('click', function(e) {
+        drawer.classList.toggle('open');
+        e.stopPropagation();
+      });
+      main.addEventListener('click', function() {
+        drawer.classList.remove('open');
+      });
+
+    </script>
+</body>
+</html>

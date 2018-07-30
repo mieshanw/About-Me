@@ -1,0 +1,73 @@
+ /*
+       * Off-canvas layout styles.
+       */
+
+      /* Since we're mobile-first, by default, the drawer is hidden. */
+      nav {
+        width: 400px;
+        height: 100%;
+        position: absolute;
+        /* This trasform moves the drawer off canvas. */
+        -webkit-transform: translate(-500px, 0);
+        transform: translate(-500px, 0);
+        /* Optionally, we animate the drawer. */
+        transition: transform 0.3s ease;
+      }
+      nav.open {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+      }
+
+      /* If there is enough space (> 600px), we keep the drawer open all the time. */
+      @media (min-width: 600px) {
+
+        /* We open the drawer. */
+        nav {
+          position:relative;
+          -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+        }
+
+        /* We use Flexbox on the parent. */
+        /*body {
+          display: -webkit-flex;
+          display: flex;
+          -webkit-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+        }*/
+
+        .container {
+          display: flex;
+          flex-direction:row;
+          width:100%;
+          height:15%;
+          background: #fff;
+          border-radius: 0px;
+        }
+
+        main {
+          width: auto;
+
+          /* Flex-grow streches the main content to fill all available space. */
+          
+          flex-grow: 1;
+        }
+/*hide menu button */
+        a#menu svg {
+        display:none;
+      }
+      }
+
+      /* If there is space (> 800px), we keep the drawer open by default. */
+      @media (min-width: 600px) {
+        main > #menu:after {
+          content: ;
+        }
+        main p, nav p {
+          text-decoration: line-through;
+        }
+       .featured {
+ 
+  width:50%;
+}
+      }
